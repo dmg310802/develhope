@@ -1,0 +1,102 @@
+<!-- Create a registration form. The form should have the following fields:
+* Email
+* Password
+* Name and Lastname
+* Date of birth
+* Telephone number
+* A select for choosing plans: free plan, a group of 3 plans with increasing price, and a checkbox for a Pro Plan
+* Credit card number
+* CVC
+* Expiration date
+* Billing Address -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Form</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Registration Form</h1>
+    <h2>Personal Information</h2>
+    <!-- Email -->
+    <label for="email-input">Email:</label>
+    <input type="email" id="email-input" required/>
+    <br>
+    <br>
+    <!-- Password -->
+    <label for="password-input">Password:</label>
+    <input type="password" id="password" required/>
+    <br>
+    <br>
+    <!-- Name and Lastname -->
+    <label for="fullname-input">Full Name:</label>
+    <input type="text" id="fullname-input" required placeholder="Your Name and Last Name" />
+    <br>
+    <br>
+    <!-- Date of birth -->
+    <label for="birth-input">Date of Birth:</label>
+    <input type="date" id="birth-input" required/>
+    <br>
+    <br>
+    <!-- Telephone number -->
+    <label for="telephone-input">Telephone:</label>
+    <input type="tel" id="birth-input" required placeholder="+33 600 751 757"/>
+    <br>
+    <br>
+    <h2>Product Information</h2>
+    <!-- A select for choosing plans: free plan, 
+      a group of 3 plans with increasing price, 
+      and a checkbox for a Pro Plan -->
+      <label for="plan-input">Choose a Plan:</label>
+      <select name="Choose a Plan" id="plan-input">
+        <option value="Free Plan">Free Plan</option>
+        <option value="Plan X">Plan X</option>
+        <option value="Plan Silver">Plan Silver</option>
+        <option value="Plan Gold" selected>Plan Gold</option>
+      </select>
+      
+      <br>
+      <br>
+      <label for="plan-checkbox">Pro Plan:</label>
+      <input type="checkbox" id="plan-checkbox"/>
+      <br>
+      <br>
+      <h2>Payment Information</h2>
+    <!-- Credit card number -->
+    <label for="ccn">Credit Card Number:</label>
+    <input type="text" id="ccn" placeholder="1111-2222-3333-4444"/>
+    <br>
+    <br>
+    <!-- CVC -->
+    <label for="CVC">CVC:</label>
+    <input type="text" id="CVC" placeholder="322"/>
+    <br>
+    <br>
+    <!-- Expiration date -->
+    <label for="expdate">Expiration Date:</label>
+    <input type="date" id="expdate" required/>
+    <br>
+    <br>
+    <!-- Billing Address -->
+    <label for="adr">Address</label>
+    <input type="text" id="adr" name="address" placeholder="542 Street, City, State, Country">
+
+
+
+  </body>
+</html>
