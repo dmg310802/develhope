@@ -1,23 +1,42 @@
+<!-- Navbar Home Link Dropdown Disabled Search Bar Search BTN -->
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar</title>
-  </head>
-  <body>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Page 2</a></li>
-      </ul>
-      <select name="Example" id="1">
-        <option value="opt1">Opción1</option>
-        <option value="opt1">Opción2</option>
-        <option value="opt1">Opción3</option>
-      </select>
-      <button type="button">Press Me</button>
+</head>
+<body>
+    <div class="div-nav">
+    <nav id="main-nav">
+        <table>
+            <tr>
+               <b>Navbar  </b> 
+            </tr>
+            <tr>
+                <b>Home  </b>
+            </tr>
+            <tr>
+                <a href="#"><b>Link   </b></a>
+            </tr>
+            <tr>
+                <select name="Dropdown" id="dropwdown">
+                    <option value="Home" selected>Dropdown</option>
+                    <option value="Page 1">Page 1</option>
+                  </select>
+            </tr>
+            <tr>
+                <input type="submit" value="Disabled" class="btn" disabled>
+            </tr>
+            <tr>
+                <input type="search" placeholder="Search">
+            </tr>
+            <tr>
+                <input type="submit" value="Search" class="btn">
+            </tr>
+        </table>
     </nav>
-  </body>
+</div>
+</body>
 </html>
