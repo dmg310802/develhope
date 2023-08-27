@@ -1,14 +1,8 @@
-<!-- Create a registration form. The form should have the following fields:
-* Email
-* Password
-* Name and Lastname
-* Date of birth
-* Telephone number
-* A select for choosing plans: free plan, a group of 3 plans with increasing price, and a checkbox for a Pro Plan
-* Credit card number
-* CVC
-* Expiration date
-* Billing Address -->
+<!-- Given the starting form, validate the fields:
+
+All fields should be marked as mandatory
+Fields related to credit card and CVC 
+should have a validation about the maximum length. -->
 
 
 
@@ -79,12 +73,12 @@
       <h2>Payment Information</h2>
     <!-- Credit card number -->
     <label for="ccn">Credit Card Number:</label>
-    <input type="text" id="ccn" placeholder="1111-2222-3333-4444" required/>
+    <input type="text" id="ccn" placeholder="1111-2222-3333-4444" maxlength="12" minlength="12" required/>
     <br>
     <br>
     <!-- CVC -->
     <label for="CVC">CVC:</label>
-    <input type="text" id="CVC" placeholder="322" required/>
+    <input type="text" id="CVC" placeholder="322" required maxlength="3" minlength="4" />
     <br>
     <br>
     <!-- Expiration date -->
@@ -94,7 +88,7 @@
     <br>
     <!-- Billing Address -->
     <label for="adr">Address</label>
-    <input type="text" id="adr" name="address" placeholder="542 Street, City, State, Country" required>
+    <input type="text" id="adr" name="address" placeholder="542 Street, City, State, Country">
     <br>
     <br>
     <input type="submit" value="Submit Form" class="btn">
