@@ -20,3 +20,12 @@ font-size: x-large;
 .color-blue {
 color: blue;
 }
+
+
+p {
+    font-size: x-large;
+}
+
+td {
+    text-align: center;
+}
