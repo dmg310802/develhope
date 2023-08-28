@@ -1,0 +1,22 @@
+body {
+font-family:'Roboto', sans-serif;
+}
+.table-container {
+ width: 30%;
+}
+
+.inside-table {
+width:100%; 
+border: 1px solid gray;
+}
+
+.align-center {
+ text-align: center;
+}
+
+.x-size {
+font-size: x-large;
+}
+.color-blue {
+color: blue;
+}
