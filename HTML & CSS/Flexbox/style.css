@@ -1,0 +1,68 @@
+:root {
+    --text: #2b2b2b;
+    --hover: #2b2bb2;
+}
+
+body {
+    background-color: aqua;
+}
+a {
+    color: var(--text);
+    width: 20px;
+    text-decoration: none;
+}
+
+a:hover {
+  color: var(--hover);
+  transition: 0.3s;
+}
+
+
+section {
+    background-color: lightgrey;
+    border: 3px solid var(--text);
+    margin-left: -10px;
+    position: absolute;
+    display: flexbox;
+    width: 200px;
+    height: 100%;
+    
+}
+
+
+.link {
+ width: auto;
+ height: auto;
+ margin: 2rem auto;
+ text-align: center;
+ font-size: 2rem;
+ flex: 1;
+}
+
+#useravatar {
+    float: left;
+    padding-left: 1rem;
+}
+
+#useravatar:hover {
+    color: var(--hover)
+}
+
+
+div.img {
+    width: auto;
+    height: auto;
+    margin: 2rem auto;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--text);
+}
+
+div.img:hover {
+    width: auto;
+    height: auto;
+    margin: 2rem auto;
+    text-align: center;
+    font-size: 4rem;
+    color: var(--hover);
+}
