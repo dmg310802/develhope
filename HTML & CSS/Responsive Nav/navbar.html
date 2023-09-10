@@ -1,0 +1,51 @@
+<!-- Navbar Home Link Dropdown Disabled Search Bar Search BTN -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/95a7ae64d9.js" crossorigin="anonymous"></script>
+    <script>
+      function myFunction() {
+  var x = document.getElementById("myLinksHamburger");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+      </script>
+  </head>
+  <body>
+    <nav class="main-nav">
+              <div class="text"><b>Navbar </b></div>
+              <div class="display"><b>Home </b></div>
+              <div class="display">
+              <a href="#"><b>Link </b></a> </div>
+              <div class="display"><select name="Dropdown" id="dropwdown">
+                <option value="Home" selected>Dropdown</option>
+                <option value="Page 1">Page 1</option>
+              </select> </div>
+              <div class="display"><input type="submit" value="Disabled" id="dbtn" disabled /> </div>
+              <div class="display"><input type="search" placeholder="Search" /> </div>
+              <div class="display"><input type="submit" value="Search" class="btn"/></div>
+            <div id="hamburger">
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa-solid fa-bars" id="hamburger"></i></a> </div>
+              <div id="myLinksHamburger">
+                <b>Home </b>
+                <a href="#"><b>Link </b></a>
+              <select name="Dropdown" id="dropwdown">
+                <option value="Home" selected>Dropdown</option>
+                <option value="Page 1">Page 1</option>
+              </select>
+              <input type="submit" value="Disabled" id="dbtn" disabled />
+              <input type="search" placeholder="Search" />
+              <input type="submit" value="Search" class="btn"/>
+            </div>
+    </nav>
+  </body>
+</html>
