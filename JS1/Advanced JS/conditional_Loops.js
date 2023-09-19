@@ -9,16 +9,27 @@
 //   // ...
 // }
 
-// const ceoSalary = calculateSalary('ceo');
-// const managerSalary = calculateSalary('manager');
-// const ctoSalary = calculateSalary('cto');
-// const developerSalary = calculateSalary('developer');
-// const otherSalary = calculateSalary('other');
+let role = "manager";
+let calculateSalary = 0; // Declare the variable outside the switch statement
 
-// console.log(ceoSalary);
-// console.log(managerSalary);
-// console.log(ctoSalary);
-// console.log(developerSalary);
-// console.log(otherSalary);
+switch (role) {
+  case 'ceo':
+    calculateSalary = 2200; // Assign the value without redeclaring
+    break;
+  case 'manager':
+    calculateSalary = 1800;
+    break;
+  case 'cto':
+    calculateSalary = 1800;
+    break;
+  case 'developer':
+    calculateSalary = 1500;
+    break;
+  default:
+    calculateSalary = 1000;
+    break;
+}
+
+console.log(calculateSalary);
 
 
