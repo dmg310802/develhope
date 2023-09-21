@@ -14,13 +14,7 @@ const persons = [
     { name: 'Sandra', age: 34 }, 
     { name: 'Alice', age: 28 } ];
 
-function nicknameMap(persons) {
-    for (let i = 0; i < persons.length; i++) {
-        const nickname = nicknameMap(persons); 
-        
-    }
-}
 
-const nicknames = nicknameMap(persons); 
-console.log(persons); 
+
+const nicknames = persons.map((person) => (person.name) + "-" + (person.age))
 console.log(nicknames); 
