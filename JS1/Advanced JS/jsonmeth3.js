@@ -15,8 +15,13 @@ const person1 = {
   }
 };
 
-const person2 = { ...person1 };
-person2.address.city = 'Milan';
+const person2 = {
+
+};
+
+Object.assign(person2,person1);
+
+Object.defineProperty(person2, "address", {value:{...person1.address,city: "Milan"}});
 
 console.log(person1);
 console.log(person2);
