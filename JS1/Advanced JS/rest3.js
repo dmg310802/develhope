@@ -1,8 +1,24 @@
-// The sum function has a high numbers of parameters. 
-// How can we improve the code in order to make it accept any amount of numbers to sum as its argument?
+// Perform a code refactoring by using the Rest Operator. 
+// The output of the console.log must be the same.
 
-function sum(num1, num2, num3, num4, num5) {
-    return num1 + num2 + num3 + num4 + num5;
-}
+const person = {
+  id: 1,
+  firstName: 'Mario',
+  lastName: 'Rossi',
+  age: 25
+};
 
-console.log(sum(1, 2, 3, 4, 5));
+
+function toOutput(person) {
+    const { id, ...rest } = person;
+    return rest;
+  }
+
+
+const id = person.id;
+const personInfo = {
+ ...person
+};
+
+console.log(id,toOutput(person));
+
