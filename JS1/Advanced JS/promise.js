@@ -9,9 +9,9 @@
 const randomPromesa = new Promise((resolve,reject) => {
     const number = 15;
     if (number > 10) {
-        resolve('Promise resolved');
+        resolve(number);
     } else {
-        reject('Promise rejected');
+        reject('Lower than 10');
     }
 })
 
