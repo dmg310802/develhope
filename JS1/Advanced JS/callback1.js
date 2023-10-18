@@ -3,7 +3,7 @@
 // The callback function must be an arrow function.
 
 function repeatHello(callback) {
-    setTimeout(()=> {
+    setInterval(()=> {
         const sayingHello = `Hello`;
         callback(sayingHello)
     },1000
