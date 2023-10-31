@@ -1,0 +1,53 @@
+async function logMovies() {
+  const response = await fetch("http://example.com/movies.json");
+  const movies = await response.json();
+  console.log(movies);
+}
+
+
+async function loadIMG() {
+  try {
+    const result = await fetch("")
+
+    if(!result.ok) {
+      console.error("Failed to fetch");
+    }
+
+    const blob = await result.blob();
+    const url = URL.createObjectURL(blob)
+    const img = document.getElementById("img");
+    img.src = url;
+    img.style.display = "block";
+
+  } catch (error) {
+    console.error(error)
+  }
+}
+
+
+document.getElementById(img-btn).addEventListener("click",loadIMG);
+
+const postOptions = {
+  method: "POST",
+  headers: {
+    "Content-Type": "app/json",
+  },
+}
+
+async function creatingPost(newPost){
+  try {
+    const response = await fetch("", 
+    postOptions);
+
+    const responseJSON = JSON.stringify(response);
+
+    if (!response.ok){
+      console.error("Failed to fetch")
+    }
+
+    const postData = await response.json();
+    console.log("New post created:", postData)
+  } catch (error) {
+    console.error('Error to create')
+  }
+}

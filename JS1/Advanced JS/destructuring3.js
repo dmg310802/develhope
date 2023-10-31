@@ -14,6 +14,6 @@ const person = {
   firstName: 'Mario',
   lastName: 'Rossi',
   age: 13
-};giot
+};
 
 console.log(isAdult(person));

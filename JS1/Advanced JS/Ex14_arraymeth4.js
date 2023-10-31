@@ -70,5 +70,3 @@ function uncompletedNotes(notes) {
 
 console.log(uncompletedNotes(notes));
 
-// Array[Objetos{Array[Objetos(Done)]}]
-// console.log(uncompletedNotes(notes));

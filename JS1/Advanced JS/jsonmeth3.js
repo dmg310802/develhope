@@ -15,15 +15,8 @@ const person1 = {
   }
 };
 
-
-// Object.assign(person2,person1);
-
-// Object.defineProperty(person2, "address", {value:{...person1.address,city: "Milan"}});
-
-
-const person2 = JSON.parse(JSON.stringify(person1));
-
-person2.address.city = "Milan";
+const person2 = { ...person1 };
+person2.address.city = 'Milan';
 
 console.log(person1);
 console.log(person2);

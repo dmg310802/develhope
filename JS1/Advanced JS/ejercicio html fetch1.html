@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch HTML</title>
+</head>
+<body>
+    <button id="loadIMG"></button>
+    <div id="img-container">
+        <img id="img1" alt="img">
+    </div>
+    <h1>Api IMG</h1>
+    <div id="img-cards"></div>
+    <script>
+        async function fetchData() {
+            try {
+                const response = await fetch('');
+                const data = await response.json();
+                const images = data.results;
+
+                const imageCards = document.getElementById("img-cards")
+
+                
+
+                images.forEach(image => {
+                    const card = document.createElement("div")
+                    card.classList.add("card")
+                    const image = document.createElement("img")
+                    image.src = image.image;
+                    image.name = image.name;
+                });
+
+
+            } catch (error) {
+                
+            }
+        }
+            
+    </script>
+</body>
+</html>

@@ -13,11 +13,6 @@ class Person {
   }
 }
 
-const newP = new Person(1,"Mario","Rossi",25);
-const json = JSON.stringify(newP)
-
-
-console.log(json);
-
-const developer = JSON.parse(json);
+const json = '{"id":1,"firstName":"Mario","lastName":"Rossi","age":25}';
+const developer = Person.fromJson(json);
 console.log(developer);

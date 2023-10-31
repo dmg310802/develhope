@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box</title>
+    <style>
+        .box {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="element">Text 1</li>
+        <li class="element">Text 2</li>
+        <li class="element">Text 3</li>
+    </ul>
+
+    <div id="container">
+        Div container
+    </div>
+
+  <script>
+        const divClass = document.getElementById("container");
+        divClass.classList.add("box");
+    </script>
+</body>
+</html>
