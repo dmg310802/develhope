@@ -7,7 +7,7 @@ function HelloWorld() {
     <>
      <h2>Hello, World!</h2>
      <Message/>
-     <Welcome name=""/>
+     <Welcome name="" age={20} />
     </>
   )
 }

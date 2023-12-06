@@ -1,4 +1,4 @@
-function Welcome({name}) {
+function Welcome({name,age}) {
 
     if (name === "" || name === undefined ) {
         name = "Juan";
@@ -8,6 +8,7 @@ function Welcome({name}) {
     return (
       <>
        <p>Welcome {name}!</p>
+       <p>You are {age} years old!</p>
       </>
     )
   }
