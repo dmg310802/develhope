@@ -1,3 +1,5 @@
+import Age from "./Age";
+
 function Welcome({name,age}) {
 
     if (name === "" || name === undefined ) {
@@ -9,6 +11,7 @@ function Welcome({name,age}) {
       <>
        <p>Welcome {name}!</p>
        <p>You are {age} years old!</p>
+       <age age={25}/>
       </>
     )
   }
