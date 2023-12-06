@@ -1,4 +1,5 @@
 import Message from "./Message"
+import Welcome from "./Welcome"
 
 function HelloWorld() {
 
@@ -6,6 +7,7 @@ function HelloWorld() {
     <>
      <h2>Hello, World!</h2>
      <Message/>
+     <Welcome name=""/>
     </>
   )
 }
