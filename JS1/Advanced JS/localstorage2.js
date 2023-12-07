@@ -18,7 +18,7 @@ const user = {
       console.log(user);
     } else {
       console.log(
-        "No se encontraron datos de usuario en el almacenamiento local."
+        "No user info was found on this server"
       );
     }
   }
