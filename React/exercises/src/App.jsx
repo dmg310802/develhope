@@ -1,15 +1,18 @@
 import Message from "./Message"
 import Welcome from "./Welcome"
+import Counter from "./Counter"
+import React from "react";
 
-function HelloWorld() {
+const App = () => {
 
   return (
     <>
      <h2>Hello, World!</h2>
-     <Message/>
-     <Welcome name="" age={20} />
+      <Message/>
+     <Welcome name="John"/>
+    <Counter />
     </>
   )
-}
+};
 
-export default HelloWorld
+export default App;

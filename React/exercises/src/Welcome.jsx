@@ -3,7 +3,7 @@ import Age from "./Age";
 function Welcome({name,age}) {
 
     if (name === "" || name === undefined ) {
-        name = "Juan";
+        name = "Daniel";
     }
 
 
@@ -11,7 +11,7 @@ function Welcome({name,age}) {
       <>
        <p>Welcome {name}!</p>
        <p>You are {age} years old!</p>
-       <age age={25}/>
+       <Age age={25}/>
       </>
     )
   }
