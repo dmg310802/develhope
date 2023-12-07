@@ -2,6 +2,7 @@ import Message from "./Message"
 import Welcome from "./Welcome"
 import Counter from "./Counter"
 import React from "react";
+import AlertClock from "./AlertClock";
 
 const App = () => {
 
@@ -11,6 +12,7 @@ const App = () => {
       <Message/>
      <Welcome name="John"/>
     <Counter />
+    <AlertClock/>
     </>
   )
 };

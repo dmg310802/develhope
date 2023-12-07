@@ -16,6 +16,7 @@ function Counter() {
         <>
             <h2>The count is: {count}</h2>
             <button onClick={addCounter}>Add</button>
+            <p></p>
             <button onClick={reduceCounter}>Reduce</button>
         </>
     );
