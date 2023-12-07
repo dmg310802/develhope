@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="container">
+    <form>
+      <div>
+        <label for="firstName">First Name:</label>
+        <input type="text" class="form-input" id="firstName" value="Mario"/>
+      </div>
+      <div>
+        <label for="lastName">Last Name:</label>
+        <input type="text" class="form-input" id="lastName" value="Rossi"/>
+      </div>
+      <div>
+        <label for="age">Age:</label>
+        <input type="number" class="form-input" id="age" value="25"/>
+      </div>
+    </form>
+  </div>
+  
+  <script>
+    // Paso 1: Selecciona todos los elementos con la clase "form-input"
+    const elements = document.querySelectorAll('.form-input');
+
+    // Paso 2: Itera sobre los elementos y obtén los valores del campo de entrada y el texto de la etiqueta
+    elements.forEach(element => {
+      const label = element.parentElement.querySelector('label').textContent;
+      const value = element.value;
+
+      // Paso 3: Muestra los valores en la consola en el formato deseado
+      console.log(`${label} ${value}`);
+    });
+  </script>
+
+</body>
+</html>

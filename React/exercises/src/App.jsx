@@ -11,7 +11,7 @@ const App = () => {
      <h2>Hello, World!</h2>
       <Message/>
      <Welcome name="John"/>
-    <Counter />
+    <Counter initialValue={20} incrementAmount={5}/>
     <AlertClock/>
     </>
   )
